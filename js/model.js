@@ -111,7 +111,7 @@ model_header.innerHTML = `<div class="container">
 
 							<li class="header-submenu__item">
 								<a class="header-submenu__link"
-									href="https://www.softeq.com/software-and-technology-industry">
+									href="software-and-technology-industry.html">
 									Software and Technology
 								</a>
 							</li>
@@ -403,7 +403,7 @@ model_mb_menu.innerHTML = `<div class="mb-menu__bar js-menu-box">
                         <li class="mb-menu__submenu-item">
 
                             <a class="mb-menu__submenu-link"
-                                href="https://www.softeq.com/software-and-technology-industry">Software and
+                                href="software-and-technology-industry.html">Software and
                                 Technology</a>
 
                         </li>
