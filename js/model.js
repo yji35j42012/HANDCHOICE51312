@@ -131,7 +131,7 @@ model_header.innerHTML = `<div class="container">
 
 
 							<li class="header-submenu__item">
-								<a class="header-submenu__link" href="https://www.softeq.com/game-development-services">
+								<a class="header-submenu__link" href="game-development-services.html">
 									Games
 								</a>
 							</li>
@@ -426,7 +426,7 @@ model_mb_menu.innerHTML = `<div class="mb-menu__bar js-menu-box">
                         <li class="mb-menu__submenu-item">
 
                             <a class="mb-menu__submenu-link"
-                                href="https://www.softeq.com/game-development-services">Games</a>
+                                href="game-development-services.html">Games</a>
 
                         </li>
 
