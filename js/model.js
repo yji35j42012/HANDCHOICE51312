@@ -31,7 +31,7 @@ model_header.innerHTML = `<div class="container">
 
 									<li class="header-submenu__item">
 										<a class="header-submenu__link"
-											href="https://www.softeq.com/services/mobile_application_development">
+											href="mobile_application_development.html">
 											Mobile Apps
 										</a>
 									</li>
@@ -259,7 +259,7 @@ model_mb_menu.innerHTML = `<div class="mb-menu__bar js-menu-box">
                                     </li>
                                     <li class="mb-menu__submenu-item">
                                         <a class="mb-menu__submenu-link"
-                                            href="https://www.softeq.com/services/mobile_application_development">Mobile
+                                            href="mobile_application_development.html">Mobile
                                             Apps</a>
                                     </li>
 
@@ -483,7 +483,7 @@ model_mb_menu.innerHTML = `<div class="mb-menu__bar js-menu-box">
 
 var model_preloader = document.querySelector("#model_preloader")
 document.addEventListener("DOMContentLoaded",
-	function () {
-		document.body.classList.add("loaded");
-		model_preloader.classList.add("hide");
-	});
+    function () {
+        document.body.classList.add("loaded");
+        model_preloader.classList.add("hide");
+    });
