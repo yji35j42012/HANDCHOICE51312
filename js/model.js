@@ -38,7 +38,7 @@ model_header.innerHTML = `<div class="container">
 
 									<li class="header-submenu__item">
 										<a class="header-submenu__link"
-											href="https://www.softeq.com/cloud_app_development">
+											href="cloud_app_development.html">
 											Cloud Systems
 										</a>
 									</li>
@@ -265,7 +265,7 @@ model_mb_menu.innerHTML = `<div class="mb-menu__bar js-menu-box">
 
                                     <li class="mb-menu__submenu-item">
                                         <a class="mb-menu__submenu-link"
-                                            href="https://www.softeq.com/cloud_app_development">Cloud
+                                            href="cloud_app_development.html">Cloud
                                             Systems</a>
                                     </li>
 
