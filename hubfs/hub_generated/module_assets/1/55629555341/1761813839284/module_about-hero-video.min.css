@@ -1,0 +1,9 @@
+@media screen and (min-width:1250px) {
+    .comm-hero .comm-hero__info_full-form {
+        width: calc(100% - 550px)
+    }
+}
+
+.comm-hero__form {
+    margin: 50px 0
+}

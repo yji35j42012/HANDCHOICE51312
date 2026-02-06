@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@font-face {
+    font-family: Twemoji Country Flags;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/TwemojiCountryFlags.woff2) format("woff2");
+    unicode-range: u+1f1e6-1f1ff, u+1f3f4, u+e0062-e0063, u+e0065, u+e0067, u+e006c, u+e006e, u+e0073-e0074, u+e0077, u+e007f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Bold-cyrillic-ext.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Bold-cyrillic.woff2) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Bold-vietnamese.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Bold-latin-ext.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Bold-latin.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-SemiBold-cyrillic-ext.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-SemiBold-cyrillic.woff2) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-SemiBold-vietnamese.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-SemiBold-latin-ext.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-SemiBold-latin.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat Medium"), local("Montserrat-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Medium-cyrillic-ext.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat Medium"), local("Montserrat-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Medium-cyrillic.woff2) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat Medium"), local("Montserrat-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Medium-vietnamese.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat Medium"), local("Montserrat-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Medium-latin-ext.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat Medium"), local("Montserrat-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Medium-latin.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Regular-cyrillic-ext.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Regular-cyrillic.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Regular-vietnamese.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Regular-latin-ext.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-Regular-latin.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-cyrillic-ext.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-cyrillic.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-vietnamese.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-latin-ext.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Montserrat/Montserrat-latin.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-cyrillic-ext.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-cyrillic.woff2) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-greek-ext.woff2) format("woff2");
+    unicode-range: u+1f??
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-greek.woff2) format("woff2");
+    unicode-range: u+0370-03ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-vietnamese.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-latin-ext.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-latin.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-Medium-cyrillic-ext.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-Medium-cyrillic.woff2) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-Medium-greek-ext.woff2) format("woff2");
+    unicode-range: u+1f??
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-Medium-greek.woff2) format("woff2");
+    unicode-range: u+0370-03ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-Medium-vietnamese.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-Medium-latin-ext.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(//2915353.fs1.hubspotusercontent-na1.net/hubfs/2915353/raw_assets/public/softeq/fonts/Roboto/Roboto-Medium-latint.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}

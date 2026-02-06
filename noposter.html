@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="shortcut icon" href="https://www.softeq.com/hubfs/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js" nonce="xpx4ZEOuBpoVZowxthC7zg=="></script>
+    <script nonce="xpx4ZEOuBpoVZowxthC7zg==">
+        hsjQuery = window['jQuery'];
+    </script>
+    <meta property="og:description" content="">
+    <meta property="og:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="">
+
+
+
+
+    <style>
+        a.cta_button {
+            -moz-box-sizing: content-box !important;
+            -webkit-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+            vertical-align: middle
+        }
+
+        .hs-breadcrumb-menu {
+            list-style-type: none;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px
+        }
+
+        .hs-breadcrumb-menu-item {
+            float: left;
+            padding: 10px 0px 10px 10px
+        }
+
+        .hs-breadcrumb-menu-divider:before {
+            content: '›';
+            padding-left: 10px
+        }
+
+        .hs-featured-image-link {
+            border: 0
+        }
+
+        .hs-featured-image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 50%
+        }
+
+        @media (max-width: 568px) {
+            .hs-featured-image {
+                float: none;
+                margin: 0;
+                width: 100%;
+                max-width: 100%
+            }
+        }
+
+        .hs-screen-reader-text {
+            clip: rect(1px, 1px, 1px, 1px);
+            height: 1px;
+            overflow: hidden;
+            position: absolute !important;
+            width: 1px
+        }
+    </style>
+
+
+
+
+    <!--  Added by GoogleAnalytics4 integration -->
+    <script nonce="xpx4ZEOuBpoVZowxthC7zg==">
+        var _hsp = window._hsp = window._hsp || [];
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        var useGoogleConsentModeV2 = true;
+        var waitForUpdateMillis = 1000;
+
+
+        if (!window._hsGoogleConsentRunOnce) {
+            window._hsGoogleConsentRunOnce = true;
+
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'wait_for_update': waitForUpdateMillis
+            });
+
+            if (useGoogleConsentModeV2) {
+                _hsp.push(['useGoogleConsentModeV2'])
+            } else {
+                _hsp.push(['addPrivacyConsentListener', function(consent) {
+                    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+                    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+                    gtag('consent', 'update', {
+                        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+                        'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied',
+                        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
+                        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
+                    });
+                }]);
+            }
+        }
+
+        gtag('js', new Date());
+        gtag('set', 'developer_id.dZTQ1Zm', true);
+        gtag('config', 'G-G9FZXLB05V');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9FZXLB05V" nonce="xpx4ZEOuBpoVZowxthC7zg=="></script>
+
+    <!-- /Added by GoogleAnalytics4 integration -->
+
+    <!--  Added by GoogleTagManager integration -->
+    <script nonce="xpx4ZEOuBpoVZowxthC7zg==">
+        var _hsp = window._hsp = window._hsp || [];
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        var useGoogleConsentModeV2 = true;
+        var waitForUpdateMillis = 1000;
+
+
+
+        var hsLoadGtm = function loadGtm() {
+            if (window._hsGtmLoadOnce) {
+                return;
+            }
+
+            if (useGoogleConsentModeV2) {
+
+                gtag('set', 'developer_id.dZTQ1Zm', true);
+
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'analytics_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'wait_for_update': waitForUpdateMillis
+                });
+
+                _hsp.push(['useGoogleConsentModeV2'])
+            }
+
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-P4V86H');
+
+            window._hsGtmLoadOnce = true;
+        };
+
+        _hsp.push(['addPrivacyConsentListener', function(consent) {
+            if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+                hsLoadGtm();
+            }
+        }]);
+    </script>
+
+    <!-- /Added by GoogleTagManager integration -->
+
+    <link rel="canonical" href="https://www.softeq.com/404">
+
+
+    <meta name="facebook-domain-verification" content="dycyfc5ers49cougs4xdd4ryic75ya">
+    <link href="https://www.softeq.com/hubfs/hub_generated/template_assets/1/37039861337/1742419634365/template_fonts.min.css" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="https://www.softeq.com/hubfs/hub_generated/template_assets/1/37039861337/1742419634365/template_fonts.min.css"></noscript>
+    <link href="https://www.softeq.com/hubfs/hub_generated/template_assets/1/115910741357/1764157821147/template_bundle.min.css" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="https://www.softeq.com/hubfs/hub_generated/template_assets/1/115910741357/1764157821147/template_bundle.min.css"></noscript>
+
+    <style>
+        .contact-us-white .contacts-form__title {
+            color: #383838
+        }
+    </style>
+
+    <script id="warmly-script-loader" src="https://opps-widget.getwarmly.com/warmly.js?clientId=1b25738c598081738868339638841d85" defer nonce="xpx4ZEOuBpoVZowxthC7zg=="></script>
+    <meta property="og:url" content="https://www.softeq.com/404">
+    <meta name="twitter:card" content="summary">
+    <meta http-equiv="content-language" content="en">
+
+
+
+
+
+
+    <meta name="generator" content="HubSpot">
+</head>
+
+<body class="page">
+    <!--  Added by GoogleTagManager integration -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4V86H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- /Added by GoogleTagManager integration -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4V86H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="preloader js-preloader"></div>
+    <div class="page__inner">
+        <header class="header page__header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__group">
+
+                        <span id="hs_cos_wrapper_default-logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo logo header__logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="https://www.softeq.com/" id="hs-link-default-logo" style="border-width:0px;border:0px;"><img src="https://www.softeq.com/hubfs/content/static/images/logo/1.svg" class="hs-image-widget " height="25" style="height: auto;width:120px;border-width:0px;border:0px;" width="120" alt="SOFTEQ" title="SOFTEQ"></a></span>
+
+                        <nav class="header__nav">
+                            <ul class="header-menu header__main-menu">
+
+
+
+                                <li class="header-menu__item">
+
+                                    <div class="header-menu__link header-menu__link--with-arrow">
+                                        Services
+                                    </div>
+                                    <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+                                        <li class="header-submenu__title h3">Services</li>
+
+                                        <li class="header-submenu__item">
+
+                                            <a class="header-submenu__link" href="https://www.softeq.com/custom_application_development">
+        Custom Software Development →
+      </a>
+                                            <ul class="header-submenu header-submenu--more">
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/web_application_development">
+            Web Systems
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/services/mobile_application_development">
+            Mobile Apps
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/cloud_app_development">
+            Cloud Systems
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/softeq-amazon-web-services">
+            AWS Software
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/desktop_application_development">
+            Desktop Apps
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/qt_development">
+             QT Development  ‌
+          </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+
+                                        <li class="header-submenu__item">
+
+                                            <a class="header-submenu__link" href="https://www.softeq.com/embedded_system">
+        Embedded System Development →
+      </a>
+                                            <ul class="header-submenu header-submenu--more">
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/firmware_development">
+            Firmware
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/middleware_development">
+            Middleware
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/embedded">
+            Embedded Apps
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/thunderbolt-solution-development">
+            Thunderbolt Solutions
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/hmi_development">
+            Human-Machine Interfaces (HMIs)
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/connectivity_solutions">
+            Connectivity Solutions
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/proximity_solutions">
+            Proximity Solutions
+          </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+
+                                        <li class="header-submenu__item">
+
+                                            <a class="header-submenu__link" href="https://www.softeq.com/digital_transformation">
+        Digital Transformation
+      </a>
+
+                                        </li>
+
+                                        <li class="header-submenu__item">
+
+                                            <a class="header-submenu__link" href="https://www.softeq.com/services/hardware_design">
+        Hardware Design →
+      </a>
+                                            <ul class="header-submenu header-submenu--more">
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/electronics_system_design">
+            Electronic System Design
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/electronic_circuit_design">
+            Electronic Circuit Design
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/pcb_design_and_layout_services">
+            PCB Design and Layout Services
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/expert_analysis_simulation_modeling_services">
+            PCB Design Simulations
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/fpga_design_services">
+            FPGA Design
+          </a>
+                                                </li>
+
+                                                <li class="header-submenu__item">
+                                                    <a class="header-submenu__link" href="https://www.softeq.com/enclosure_design">
+            Enclosure Design
+          </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+
+                                        <li class="header-submenu__item">
+
+                                            <a class="header-submenu__link" href="https://www.softeq.com/business-analysis-and-it-consulting">
+        Business Analysis
+      </a>
+
+                                        </li>
+
+                                        <li class="header-submenu__item">
+
+                                            <a class="header-submenu__link" href="https://www.softeq.com/ui_ux_design">
+        UX/UI Design
+      </a>
+
+                                        </li>
+
+                                        <li class="header-submenu__item">
+
+                                            <a class="header-submenu__link" href="https://www.softeq.com/cybersecurity">
+        Cyber Security
