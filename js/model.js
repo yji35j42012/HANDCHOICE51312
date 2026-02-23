@@ -6,9 +6,9 @@ model_header.innerHTML = `<div class="container">
 				class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo logo header__logo" style=""
 				data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="./index.html"
 					id="hs-link-default-logo" style="border-width:0px;border:0px;"><img
-						src="https://www.Softeq.com/hubfs/content/static/images/logo/1.svg" class="hs-image-widget "
+						src="./images/logo.png" class="hs-image-widget "
 						height="25" style="height: auto;width:120px;border-width:0px;border:0px;" width="120"
-						alt="SOFTEQ" title="SOFTEQ"></a></span>
+						alt="HAND CHOICE" title="HAND CHOICE"></a></span>
 
 			<nav class="header__nav">
 				<ul class="header-menu header__main-menu">
