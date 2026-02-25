@@ -180,28 +180,7 @@ model_header.innerHTML = `<div class="container">
 		</div>
 	</div>
 </div>
-
-<div id="hs_cos_wrapper_module_16317066883226" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-	style="display: ;" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-
-	<div class="ribbon" data-id="" style="display: block;">
-		<div class="ribbon__container">
-			<div class="ribbon__row">
-				<div class="ribbon__col ribbon__col_text ribbon__text">
-					<p><strong>Check out our latest blog article: From component to enterprise – modular
-							robotics done right.<br></strong></p>
-				</div>
-
-				<div class="ribbon__col ribbon__col_link">
-					<a href="https://www.Softeq.com/blog/ros2-modular-architecture-scalable-robotics-business"
-						class="ribbon__link" target="_blank" rel="noopener">Read more</a>
-				</div>
-
-			</div>
-			<div class="ribbon__close"></div>
-		</div>
-	</div>
-</div>`;
+`;
 
 
 var model_footer_default = document.querySelector("#model_footer_default");
@@ -458,32 +437,29 @@ model_mb_menu.innerHTML = `<div class="mb-menu__bar js-menu-box">
 var contactBox = document.querySelector("#contactBox");
 
 if (contactBox) {
-
-
 	contactBox.innerHTML = `
 	<link rel="stylesheet" href="./style/contact.css">
 	<div id="contactBox" class="contactBox">
 							<div class="contactBox_item">
 								<label class="contact_label">First Name*</label>
 								<!-- input 加上error -->
-								<input type="text" class="contactBox_inp">
+								<input type="text" class="contactBox_inp" id="from_firstname">
 								<div class="error_text">Please complete this required field.</div>
 							</div>
 							<div class="contactBox_item">
-								<label class="contact_label">First Name*</label>
-								<input type="text" class="contactBox_inp">
+								<label class="contact_label">Last Name*</label>
+								<input type="text" class="contactBox_inp" id="from_lastname">
 								<div class="error_text">Please complete this required field.</div>
 							</div>
 							<div class="contactBox_item">
 								<label class="contact_label">Business Email*</label>
-								<input type="text" class="contactBox_inp">
+								<input type="email" class="contactBox_inp" id="from_email">
 								<div class="error_text">Please complete this required field.</div>
 							</div>
 							<div class="contactBox_item">
 								<label class="contact_label">Phone Number</label>
 								<div class="contactBox_selBox">
-									<select id="" class="contactBox_sel" name="">
-										<option disabled="" value=""></option>
+									<select class="contactBox_sel" id="from_phone_sel">
 										<option value="AF">🇦🇫 AF</option>
 										<option value="AL">🇦🇱 AL</option>
 										<option value="DZ">🇩🇿 DZ</option>
@@ -719,16 +695,14 @@ if (contactBox) {
 										<option value="ZM">🇿🇲 ZM</option>
 										<option value="ZW">🇿🇼 ZW</option>
 									</select>
-									<input type="text" class="contactBox_inp">
+									<input type="text" class="contactBox_inp" id="from_phone">
 								</div>
 								<!-- <div class="error_text">Please complete this required field.</div> -->
 							</div>
 							<div class="contactBox_item w100">
 								<label class="contact_label">Country*</label>
-								<select id="country_region_test_property-887a3844-c05c-44b6-b59b-13e1aeb50d7f"
-									required="" class="contactBox_sel" name="country_region_test_property">
-									<option disabled="" value="">Please Select</option>
-									<option value=""></option>
+								<select id="from_country_sel"
+									class="contactBox_sel" name="country_region_test_property">
 									<option value="Afghanistan">Afghanistan</option>
 									<option value="Åland Islands">Åland Islands</option>
 									<option value="Albania">Albania</option>
@@ -991,19 +965,17 @@ if (contactBox) {
 							<div class="contactBox_item w100">
 								<label class="contact_label">Company name*</label>
 								<!-- input 加上error -->
-								<input type="text" class="contactBox_inp">
+								<input type="text" class="contactBox_inp" id="from_company">
 								<div class="error_text">Please complete this required field.</div>
 							</div>
 							<div class="contactBox_item w100">
 								<label class="contact_label">Message</label>
 								<!-- input 加上error -->
-								<textarea class="contact_text" name="" id="" cols="30" rows="1"
+								<textarea class="contact_text" name="" cols="30" rows="1" id="from_msg"
 									placeholder="Provide ALL project details for the best HAND CHOICE response."></textarea>
-								<!-- <input type="text" class="contactBox_inp"> -->
-								<div class="error_text">Please complete this required field.</div>
 							</div>
-							<label class="contactBox_agree">
-								<input type="checkbox" class="contactBox_check">
+							<label class="contactBox_agree" >
+								<input type="checkbox" class="contactBox_check" id="from_checkbox">
 								<span>
 									I agree to HAND CHOICE <a href="privacy-statement.html" target="_blank"
 										rel="nofollow noopener">Privacy and Cookies Policy</a>.
@@ -1027,11 +999,50 @@ if (contactBox) {
 								</div><input type="hidden" name="g-recaptcha-response" id="hs-recaptcha-response"
 									value="" autocomplete="off">
 							</div>
-							<input type="submit" class="contactBox_submit" value="SUBMIT" autocomplete="off">
-						</div>
-	`
+							<button id="from_submit" class="contactBox_submit">SUBMIT</button>
+						</div>	`
 }
 
+
+
+let ids = ['from_firstname', 'from_lastname', 'from_email', 'from_phone_sel', 'from_phone', 'from_country_sel', 'from_company', 'from_msg'];
+let inputs = ids.map(id => document.querySelector('#' + id));
+let ckBox = document.querySelector('#from_checkbox');
+let submitBtn = document.querySelector('#from_submit');
+// 必填欄位
+let requiredIds = ['from_firstname', 'from_lastname', 'from_email', 'from_company'];
+
+submitBtn.addEventListener('click',()=>{
+	let hasError = false;
+	for (let input of inputs) {
+       	// ===== 必填檢查 =====
+        if (requiredIds.includes(input.id)) {
+            if (!input.value.trim()) {
+                input.classList.add('error');
+                hasError = true;
+                continue; // 已經錯了就不用往下驗證
+            } else {
+                input.classList.remove('error');
+            }
+        }
+
+		// ===== Email 驗證 =====
+        if (input.id == 'from_email' && input.value.trim()) {
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(input.value.trim())) {
+                input.classList.add('error');
+                hasError = true;
+            } else {
+                input.classList.remove('error');
+            }
+        }
+    }
+
+	if(hasError || !ckBox.checked) return;
+
+
+    console.log("送出");
+})
 
 
 
