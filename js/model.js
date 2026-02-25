@@ -1012,7 +1012,7 @@ let submitBtn = document.querySelector('#from_submit');
 // 必填欄位
 let requiredIds = ['from_firstname', 'from_lastname', 'from_email', 'from_company'];
 
-submitBtn.addEventListener('click',()=>{
+submitBtn.addEventListener('click', async ()=>{
 	let hasError = false;
 	for (let input of inputs) {
        	// ===== 必填檢查 =====
@@ -1040,8 +1040,34 @@ submitBtn.addEventListener('click',()=>{
 
 	if(hasError || !ckBox.checked) return;
 
+   	let formData = new FormData();
+	formData.append('firstname', document.querySelector('#from_firstname').value.trim());
+	formData.append('lastname', document.querySelector('#from_lastname').value.trim());
+	formData.append('email', document.querySelector('#from_email').value.trim());
+	formData.append('phone', document.querySelector('#from_phone')?.value.trim() || '');
+	formData.append('country', document.querySelector('#from_country_sel')?.value);
+	formData.append('company', document.querySelector('#from_company')?.value.trim() || '');
+	formData.append('message', document.querySelector('#from_msg')?.value.trim() || '');
 
-    console.log("送出");
+	try {
+		const response = await fetch('./send.php', {
+			method: 'POST',
+			body: formData
+		});
+
+		const result = await response.json();
+
+		if (result.data.status) {
+			inputs.forEach(i => i.value = '');
+			ckBox.checked = false;
+			alert("送出成功");
+		} else {
+			alert("送出失敗");
+		}
+
+	} catch (error) {
+		console.error(error);
+	}
 })
 
 
