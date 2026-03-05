@@ -1012,35 +1012,35 @@ let submitBtn = document.querySelector('#from_submit');
 // 必填欄位
 let requiredIds = ['from_firstname', 'from_lastname', 'from_email', 'from_company'];
 
-submitBtn.addEventListener('click', async ()=>{
+submitBtn.addEventListener('click', async () => {
 	let hasError = false;
 	for (let input of inputs) {
-       	// ===== 必填檢查 =====
-        if (requiredIds.includes(input.id)) {
-            if (!input.value.trim()) {
-                input.classList.add('error');
-                hasError = true;
-                continue; // 已經錯了就不用往下驗證
-            } else {
-                input.classList.remove('error');
-            }
-        }
+		// ===== 必填檢查 =====
+		if (requiredIds.includes(input.id)) {
+			if (!input.value.trim()) {
+				input.classList.add('error');
+				hasError = true;
+				continue; // 已經錯了就不用往下驗證
+			} else {
+				input.classList.remove('error');
+			}
+		}
 
 		// ===== Email 驗證 =====
-        if (input.id == 'from_email' && input.value.trim()) {
-            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(input.value.trim())) {
-                input.classList.add('error');
-                hasError = true;
-            } else {
-                input.classList.remove('error');
-            }
-        }
-    }
+		if (input.id == 'from_email' && input.value.trim()) {
+			let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(input.value.trim())) {
+				input.classList.add('error');
+				hasError = true;
+			} else {
+				input.classList.remove('error');
+			}
+		}
+	}
 
-	if(hasError || !ckBox.checked) return;
+	if (hasError || !ckBox.checked) return;
 
-   	let formData = new FormData();
+	let formData = new FormData();
 	formData.append('firstname', document.querySelector('#from_firstname').value.trim());
 	formData.append('lastname', document.querySelector('#from_lastname').value.trim());
 	formData.append('email', document.querySelector('#from_email').value.trim());
@@ -1079,3 +1079,40 @@ document.addEventListener("DOMContentLoaded",
 		model_preloader.classList.add("hide");
 	});
 
+
+
+	var cont_detail = document.querySelector("#cont_detail");
+	cont_detail.innerHTML=`								<div class="contacts-details__item contacts-details__item--main">
+	<div class="contacts-details__status accord-header js-accord active"
+		data-visible="xs">
+		Headquarters
+	</div>
+	<div class="accord-content">
+		<div class="contacts-details__group">
+			<span class="h2 contacts-details__place"></span>
+			<div class="contacts-details__address">
+			臺北市南港區南港路三段9號9樓
+			</div>
+
+			<!-- 	<ul class="contacts-details__list">
+
+				<li class="contacts-details__list-item">
+					<a class="contacts-details__link" href="tel:+1%20888%20552-5001"
+						onclick="ga('send', 'event', 'contact_phone_en', 'click');">
+						+1 888 552-5001
+					</a>
+				</li>
+
+				<li class="contacts-details__list-item">
+					<a class="contacts-details__link" href="tel:+%201%20281%20552-5000"
+						onclick="ga('send', 'event', 'contact_phone_en', 'click');">
+						+ 1 281 552-5000
+					</a>
+				</li>
+
+			</ul> -->
+
+		</div>
+	</div>
+</div>`;
+cont_detail.classList.add("juc");

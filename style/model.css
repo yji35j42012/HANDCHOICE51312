@@ -1,0 +1,30 @@
+.go2933276541,
+.go2369186930,
+#hs-interactives-modal-overlay,
+#hs-overlay-cta-202420027925 {
+	display: none;
+}
+
+.go1432718904 {
+	overflow: auto !important;
+}
+
+.focus__item:hover:after {
+	display: none !important;
+}
+
+.focus__item:hover .focus__link-text,
+.focus__item:hover .focus__text,
+.focus__item:hover .focus__title {
+	color: #383838 !important;
+}
+
+/* .hashover .focus__item:hover .focus__link-text,
+.hashover .focus__item:hover .focus__text,
+.hashover .focus__item:hover .focus__title {
+	color: #fff !important;
+} */
+
+/* .juc {
+	justify-content: center;
+} */

@@ -4043,13 +4043,6 @@ body.loaded .brands__img:nth-child(6) {
     border-top: 2px solid #383838
 }
 
-.focus__item:hover:after {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: .1s;
-    visibility: visible
-}
-
 .focus__item:hover .focus__bg {
     visibility: visible
 }
