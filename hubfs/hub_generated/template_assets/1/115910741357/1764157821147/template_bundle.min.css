@@ -1985,7 +1985,13 @@ p {
 }
 
 .preloader {
-	display: none;
+	background: #fff;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 
 .slick-list,

@@ -1077,6 +1077,9 @@ document.addEventListener("DOMContentLoaded",
 	function () {
 		document.body.classList.add("loaded");
 		model_preloader.classList.add("hide");
+		setTimeout(() => {
+			model_preloader.style.display="none"
+		}, 100);
 	});
 
 
