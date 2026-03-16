@@ -982,23 +982,6 @@ if (contactBox) {
 								</span>
 
 							</label>
-							<div class="hs_recaptcha hs-recaptcha field hs-form-field"
-								style="display: block; width: 100%;">
-								<div class="input">
-									<div class="grecaptcha-badge" data-style="inline"
-										style="width: 256px; height: 60px; box-shadow: gray 0px 0px 5px;">
-										<div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60"
-												role="presentation" name="a-3rtxl0ki6vlk" frameborder="0" scrolling="no"
-												sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-												src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6Ld_ad8ZAAAAAAqr0ePo1dUfAi0m4KPkCMQYwPPm&amp;co=aHR0cHM6Ly93d3cuc29mdGVxLmNvbTo0NDM.&amp;hl=en&amp;v=gYdqkxiddE5aXrugNbBbKgtN&amp;size=invisible&amp;badge=inline&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=z76uak95n9wo"></iframe>
-										</div>
-										<div class="grecaptcha-error"></div><textarea id="g-recaptcha-response"
-											name="g-recaptcha-response" class="g-recaptcha-response"
-											style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-									</div><iframe style="display: none;"></iframe>
-								</div><input type="hidden" name="g-recaptcha-response" id="hs-recaptcha-response"
-									value="" autocomplete="off">
-							</div>
 							<button id="from_submit" class="contactBox_submit">SUBMIT</button>
 						</div>	`
 }
@@ -1096,6 +1079,7 @@ document.addEventListener("DOMContentLoaded",
 			<div class="contacts-details__address">
 			9 F., No. 9, Sec. 3, Nangang Rd., Nangang Dist., Taipei City 115004, Taiwan (R.O.C.)
 			</div>
+			<a style='color: #939393;' href="mailto:service@handchoice51312.com" class="email-link">service@handchoice51312.com</a>
 
 			<!-- 	<ul class="contacts-details__list">
 

@@ -133,6 +133,9 @@
 	.contact-us-white .contacts-form__title {
 		color: #fff;
 	}
+	.contact-us-white.bl .contacts-form__title {
+		color: #000;
+	}
 }
 
 .contact-us-white .contact_text {
